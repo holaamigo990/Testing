@@ -1,67 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EliteMart</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Minimal Store with Placeholder Ads">
+  <title>Digital Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #111; color: #fff; line-height: 1.6; padding: 2rem; }
+    header { text-align: center; padding: 2rem 0; }
+    h1 { font-size: 2.5rem; }
+    .store-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .card { background: #1a1a1a; padding: 1.5rem; border-radius: 16px; box-shadow: 0 0 10px rgba(0,0,0,0.3); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.03); }
+    .card h3 { margin-bottom: 1rem; }
+    .card p { font-size: 0.95rem; color: #ccc; }
+    .buy-btn { margin-top: 1rem; display: inline-block; background: #00df9a; color: #000; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; transition: background 0.3s ease; }
+    .buy-btn:hover { background: #00b87a; }
+    .ads { margin: 3rem 0; text-align: center; }
+  </style>
+  <!-- Placeholder AdSense script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
 </head>
-<body class="bg-black text-white font-sans">
-
-  <!-- Header -->
-  <header class="sticky top-0 bg-black bg-opacity-80 backdrop-blur-md shadow-md p-4 flex justify-between items-center z-50">
-    <h1 class="text-2xl font-bold">EliteMart</h1>
-    <div class="space-x-4 text-gray-300">
-      <button title="Search">🔍</button>
-      <button title="Cart">🛒</button>
+<body>
+  <header>
+    <h1>Minimal Digital Store</h1>
+    <p>Buy digital guides, templates, routines and more</p>
+  </header>  <!-- Ad block -->  <div class="ads">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>  <section class="store-container">
+    <div class="card">
+      <h3>Workout Plan PDF</h3>
+      <p>4-week full body calisthenics routine</p>
+      <a href="#" class="buy-btn">Buy ₹99</a>
     </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="text-center py-12 px-6">
-    <h2 class="text-4xl font-semibold mb-2 transform transition duration-700 hover:scale-105">
-      Discover Luxury, Tech & More
-    </h2>
-    <p class="text-gray-300 max-w-lg mx-auto">
-      Shop premium items curated for elegance – from watches to electronics.
-    </p>
-  </section>
-
-  <!-- Products -->
-  <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 pb-12">
-    <!-- Product 1 -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
-           class="w-full h-48 object-cover" alt="Luxury Watch">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Luxury Watch</h3>
-        <p class="text-green-400">$9,999</p>
-        <button class="mt-3 w-full bg-white text-black py-2 rounded hover:bg-gray-200">Add to Cart</button>
-      </div>
+    <div class="card">
+      <h3>Study Planner</h3>
+      <p>Printable A4 layout + Notion version</p>
+      <a href="#" class="buy-btn">Buy ₹49</a>
     </div>
-
-    <!-- Product 2 -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-      <img src="https://images.unsplash.com/photo-1510557880182-3de5fbf8f12b?auto=format&fit=crop&w=800&q=80"
-           class="w-full h-48 object-cover" alt="Smartphone X">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Smartphone X</h3>
-        <p class="text-green-400">$1,299</p>
-        <button class="mt-3 w-full bg-white text-black py-2 rounded hover:bg-gray-200">Add to Cart</button>
-      </div>
+    <div class="card">
+      <h3>Notion Budget Tracker</h3>
+      <p>Track your money smartly</p>
+      <a href="#" class="buy-btn">Buy ₹79</a>
     </div>
-
-    <!-- Product 3 -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-      <img src="https://images.unsplash.com/photo-1596464716121-9568f5c81314?auto=format&fit=crop&w=800&q=80"
-           class="w-full h-48 object-cover" alt="Designer Shoes">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Designer Shoes</h3>
-        <p class="text-green-400">$599</p>
-        <button class="mt-3 w-full bg-white text-black py-2 rounded hover:bg-gray-200">Add to Cart</button>
-      </div>
-    </div>
-  </main>
+  </section>  <!-- Bottom Ad block -->  <div class="ads">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0987654321"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 </body>
 </html>
