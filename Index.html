@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EliteMart</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-black text-white font-sans">
@@ -21,16 +20,20 @@
 
   <!-- Hero -->
   <section class="text-center py-12 px-6">
-    <h2 class="text-4xl font-semibold mb-2" data-aos="fade-up">Discover Luxury, Tech & More</h2>
-    <p class="text-gray-300 max-w-lg mx-auto" data-aos="fade-up" data-aos-delay="100">
-      Shop premium items curated for elegance – from luxury watches to cutting-edge electronics.
+    <h2 class="text-4xl font-semibold mb-2 transform transition duration-700 hover:scale-105">
+      Discover Luxury, Tech & More
+    </h2>
+    <p class="text-gray-300 max-w-lg mx-auto">
+      Shop premium items curated for elegance – from watches to electronics.
     </p>
   </section>
 
   <!-- Products -->
   <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 pb-12">
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in">
-      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" alt="Luxury Watch">
+    <!-- Product 1 -->
+    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+           class="w-full h-48 object-cover" alt="Luxury Watch">
       <div class="p-4">
         <h3 class="text-xl font-semibold">Luxury Watch</h3>
         <p class="text-green-400">$9,999</p>
@@ -38,8 +41,10 @@
       </div>
     </div>
 
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-      <img src="https://images.unsplash.com/photo-1510557880182-3de5fbf8f12b?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" alt="Smartphone">
+    <!-- Product 2 -->
+    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="https://images.unsplash.com/photo-1510557880182-3de5fbf8f12b?auto=format&fit=crop&w=800&q=80"
+           class="w-full h-48 object-cover" alt="Smartphone X">
       <div class="p-4">
         <h3 class="text-xl font-semibold">Smartphone X</h3>
         <p class="text-green-400">$1,299</p>
@@ -47,8 +52,10 @@
       </div>
     </div>
 
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="200">
-      <img src="https://images.unsplash.com/photo-1596464716121-9568f5c81314?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" alt="Designer Shoes">
+    <!-- Product 3 -->
+    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="https://images.unsplash.com/photo-1596464716121-9568f5c81314?auto=format&fit=crop&w=800&q=80"
+           class="w-full h-48 object-cover" alt="Designer Shoes">
       <div class="p-4">
         <h3 class="text-xl font-semibold">Designer Shoes</h3>
         <p class="text-green-400">$599</p>
@@ -56,8 +63,5 @@
       </div>
     </div>
   </main>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
