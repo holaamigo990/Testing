@@ -1,68 +1,94 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Minimal Store with Placeholder Ads">
-  <title>Digital Store</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: #111; color: #fff; line-height: 1.6; padding: 2rem; }
-    header { text-align: center; padding: 2rem 0; }
-    h1 { font-size: 2.5rem; }
-    .store-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
-    .card { background: #1a1a1a; padding: 1.5rem; border-radius: 16px; box-shadow: 0 0 10px rgba(0,0,0,0.3); transition: transform 0.3s ease; }
-    .card:hover { transform: scale(1.03); }
-    .card h3 { margin-bottom: 1rem; }
-    .card p { font-size: 0.95rem; color: #ccc; }
-    .buy-btn { margin-top: 1rem; display: inline-block; background: #00df9a; color: #000; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; transition: background 0.3s ease; }
-    .buy-btn:hover { background: #00b87a; }
-    .ads { margin: 3rem 0; text-align: center; }
-  </style>
-  <!-- Placeholder AdSense script -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Minimal Digital Store</h1>
-    <p>Buy digital guides, templates, routines and more</p>
-  </header>  <!-- Ad block -->  <div class="ads">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>  <section class="store-container">
-    <div class="card">
-      <h3>Workout Plan PDF</h3>
-      <p>4-week full body calisthenics routine</p>
-      <a href="#" class="buy-btn">Buy ₹99</a>
-    </div>
-    <div class="card">
-      <h3>Study Planner</h3>
-      <p>Printable A4 layout + Notion version</p>
-      <a href="#" class="buy-btn">Buy ₹49</a>
-    </div>
-    <div class="card">
-      <h3>Notion Budget Tracker</h3>
-      <p>Track your money smartly</p>
-      <a href="#" class="buy-btn">Buy ₹79</a>
-    </div>
-  </section>  <!-- Bottom Ad block -->  <div class="ads">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-         data-ad-slot="0987654321"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">FreshMart</div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search groceries...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-user"></i>
+
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>3</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fresh Groceries Delivered Fast</h1>
+            <p>Farm fresh vegetables, fruits and daily essentials.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Categories</h2>
+
+        <div class="category-grid">
+            <div class="category-card">🥦 Vegetables</div>
+            <div class="category-card">🍎 Fruits</div>
+            <div class="category-card">🥛 Dairy</div>
+            <div class="category-card">🍞 Bakery</div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Popular Products</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="">
+                <h3>Fresh Apples</h3>
+                <p>$4.99 / kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1447175008436-054170c2e979" alt="">
+                <h3>Organic Carrots</h3>
+                <p>$2.49 / kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc" alt="">
+                <h3>Milk Pack</h3>
+                <p>$1.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="">
+                <h3>Whole Wheat Bread</h3>
+                <p>$1.49</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 FreshMart Grocery Store. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
